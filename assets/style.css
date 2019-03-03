@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono');
+
+/* basics */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* min-height: 100%; */
+    /* min-height: 100vh; */
+    background-color: rgb(245, 245, 245);
+
+    overflow-x: hidden;
+
+    font-family: 'Ubuntu Mono';
+}
+
+/* navigation 
+    and header */
+header {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header > nav > ul {
+    text-decoration: none;
+}
+header > nav > ul > li {
+    display: inline-block;
+    margin-right: .6rem;
+}
+
+header > nav > ul > li > a{
+    color: black;
+    text-decoration: none;
+}
+header > nav > ul > li > a:hover{
+    opacity: .7;
+}
+header > nav > ul > li > a:active{
+    color: rgb(244, 86, 66);
+    opacity: 1;
+}
+
+/* containers
+    and content */
+.container {
+    max-width: 800px;
+
+    margin: 2rem auto 0 auto;
+}
+
+.big-title {
+    font-size: 3rem;
+
+    text-align: center;
+}
+
+p {
+    max-width: 90%;
+}
+
+.tcenter {
+    text-align: center;
+}
+.tjust {
+    text-align: justify;
+}
+
+.verbatim {
+    font-family: Consolas;
+
+    font-style: italic;
+
+    padding: 0.05rem;
+    background: rgba(240, 240, 240);
+}
+
+.faq-q {
+    font-weight: bold;
+}
+
+/* footer
+    and copyrights */
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    width: 100vw;
+    height: 2rem;
+
+    line-height: 2rem;
+
+    text-align: center;
+
+    background-color: #e8e8e8;
+}
+
+.copyrights {
+    color: transparent;
+}
+.copyrights::selection {
+    color: transparent;
+}
